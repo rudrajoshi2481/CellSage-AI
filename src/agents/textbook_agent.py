@@ -1,16 +1,20 @@
 """TextbookAgent for reading and explaining textbook content."""
 import os
+import warnings
 from pathlib import Path
 from typing import Dict, List, Optional
 from datetime import datetime
 
 import PyPDF2
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
-from langchain.embeddings import HuggingFaceEmbeddings
 from rich.progress import Progress, SpinnerColumn, TextColumn
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
 
 from src.utils.logger import get_logger
+
+# Filter out LangChain deprecation warnings
+warnings.filterwarnings('ignore', category=DeprecationWarning, module='langchain.*')
 
 logger = get_logger(__name__)
 
@@ -178,43 +182,56 @@ Please provide a comprehensive explanation that includes:
 5. Related topics and connections"""
             
             # Get response from Ollama
-            response = self._get_llm_response(prompt)
+            response = ""
+            for line in self._get_llm_response(prompt):
+                words = line.split()
+                for word in words:
+                    print(word, end=' ', flush=True)  # Print each word with a space
+                response += line + "\n"
             return response
             
         except Exception as e:
             logger.error(f"Error explaining topic: {str(e)}")
             return f"Error explaining topic: {str(e)}"
             
-    def _get_llm_response(self, prompt: str) -> str:
-        """Get response from Ollama LLM.
+    def _get_llm_response(self, prompt: str):
+        """Get response from Ollama LLM with streaming.
         
         Args:
             prompt: Input prompt
-            
-        Returns:
-            LLM response
+        
+        Yields:
+            Incremental parts of LLM response
         """
         try:
             import requests
+            import json
             
             response = requests.post(
                 "http://localhost:11434/api/generate",
                 json={
                     "model": "llama3.2:3b",
                     "prompt": prompt,
-                    "stream": False,
+                    "stream": True,  # Enable streaming
                     "options": {
                         "temperature": 0.7,
                         "num_predict": 2048
                     }
-                }
+                },
+                stream=True  # Enable streaming in the request
             )
             response.raise_for_status()
-            return response.json()["response"]
             
+            # Stream response data
+            for line in response.iter_lines():
+                if line:
+                    # Parse JSON and extract the response field
+                    data = json.loads(line)
+                    yield data.get('response', '')
+                    
         except Exception as e:
             logger.error(f"Error getting LLM response: {str(e)}")
-            return f"Error: {str(e)}"
+            yield f"Error: {str(e)}"
             
     def get_loaded_books(self) -> List[str]:
         """Get list of loaded books.
