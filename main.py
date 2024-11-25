@@ -1,4 +1,7 @@
 """Main script to demonstrate Research Assistant usage."""
+import os
+from datetime import datetime
+from pathlib import Path
 from src import ResearchAssistant
 from src.utils.logger import get_logger
 from rich.console import Console
@@ -15,9 +18,36 @@ theme = Theme({
     "info": "cyan",
     "warning": "yellow",
     "error": "red bold",
-    "prompt": "green bold"
+    "prompt": "green bold",
+    "success": "green"
 })
 console = Console(theme=theme)
+
+def save_research_results(topic: str, result: str) -> str:
+    """Save research results to a file.
+    
+    Args:
+        topic: Research topic
+        result: Research findings
+        
+    Returns:
+        Path to the saved file
+    """
+    # Create results directory if it doesn't exist
+    results_dir = Path("research_results")
+    results_dir.mkdir(exist_ok=True)
+    
+    # Create a filename from the topic and timestamp
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    # Clean topic for filename (remove special chars, limit length)
+    clean_topic = "".join(c if c.isalnum() else "_" for c in topic)[:50]
+    filename = f"{clean_topic}_{timestamp}.md"
+    
+    # Save the results
+    file_path = results_dir / filename
+    file_path.write_text(f"# Research Results: {topic}\n\n{result}")
+    
+    return str(file_path)
 
 def main():
     """Run the research assistant demo."""
@@ -51,6 +81,10 @@ def main():
         # Get findings
         result = assistant.research_topic(topic)
         logger.info("Research completed successfully")
+        
+        # Save results to file
+        file_path = save_research_results(topic, result)
+        console.print(f"\n[success]Results saved to: {file_path}[/success]")
         
         # Display results with rich formatting
         console.print("\n[info]Research Findings:[/info]")
