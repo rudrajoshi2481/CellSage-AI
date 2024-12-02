@@ -1,0 +1,77 @@
+[
+  {
+    "id": "39585726",
+    "title": "Transport-driven chemical oscillations: a review.",
+    "abstract": "Chemical oscillators attract transversal interest not only as useful models for understanding and controlling (bio)chemical complexity far from the equilibrium, but also as a promising means to design smart materials and power synthetic functional behaviors. We review and classify oscillatory phenomena in systems where a periodic variation in the concentration of the constitutive chemical species is induced by transport instabilities either triggered by simple reactions or without any reactive process at play. These phenomena, where the origin of the dynamical complexity is shifted from chemical to physical nonlinearities, can facilitate a variety of processes commonly encountered in chemistry and chemical engineering. We present an excursus through the main examples, discussing phenomenology, properties and modeling of different mechanisms that can lead to these kinds of oscillations. In particular, we reproduce the relevant results reported in the pertinent literature and, in parallel, propose new kinds of proof-of-concept systems substantiated by preliminary studies which can inspire new research lines. In the landscape of physically driven chemical oscillations, we devote particular attention to transport phenomena, actively or passively combined to (reactive or nonreactive) chemical species, which provide multiple pathways towards spontaneous oscillatory instabilities. Though with different specificities, the great part of these systems can be reduced to a common theoretical description. We finally overview possible perspectives in the study of physically driven oscillatory instabilities, showing how the related control can impact fundamental and applied open problems, ranging from origin of life studies to the optimization of processes with environmental relevance.",
+    "authors": [
+      "M A Budroni",
+      "F Rossi"
+    ],
+    "journal": "Physical chemistry chemical physics : PCCP",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39585726/"
+  },
+  {
+    "id": "39585665",
+    "title": "Bioinspired programmable coacervate droplets and self-assembled fibers through pH regulation of monomers.",
+    "abstract": "Phase separation and phase transitions pervade the biological domain, where proteins and RNA engage in liquid-liquid phase separation (LLPS), forming liquid-like membraneless organelles. The misregulation or dysfunction of these proteins culminates in the formation of solid aggregates ",
+    "authors": [
+      "Satyajit Patra",
+      "Sushmitha Chandrabhas",
+      "Subi J George"
+    ],
+    "journal": "Journal of materials chemistry. B",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39585665/"
+  },
+  {
+    "id": "39585615",
+    "title": "Visualizing the Internalization of Marburg Viruslike Particles into Living Cells.",
+    "abstract": "Viral entry into cells is a pivotal stage of the infection process and, therefore, a prime target for the development of antiviral therapeutics. Here, we describe a system to monitor the internalization of lipophilic dye-labeled Marburg viruslike particles (VLPs) into living cells. Using cells stably expressing fluorescent protein-fused markers for specific cell organelles, the VLP entry process can be visualized. This procedure enables the characterization of the entry process by visualizing individual steps using specific bio-probes. Additionally, when combined with image analysis, this method allows for the quantification of the efficiencies of individual entry steps including particle adsorption, uptake by endocytosis, and membrane fusion. Finally, this method can be used for antiviral drug screening.",
+    "authors": [
+      "Asuka Nanbo",
+      "Miako Sakaguchi",
+      "Wakako Furuyama"
+    ],
+    "journal": "Methods in molecular biology (Clifton, N.J.)",
+    "year": "2025",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39585615/"
+  },
+  {
+    "id": "39585609",
+    "title": "Comparative Secretory Efficiency of Two Chitosanase Signal Peptides from Bacillus subtilis in Escherichia coli.",
+    "abstract": "The production of recombinant proteins in Escherichia coli is often challenged by cytoplasmic expression due to proteolytic degradation and inclusion body formation. Extracellular expression can overcome these problems by simplifying downstream processing and improving protein yields. This study aims to compare the efficiency of two Bacillus subtilis chitosanase signal peptides in mediating extracellular secretion in E. coli. We identified a naturally occurring mutant signal peptide (mCsn2-SP) from B. subtilis CH2 chitosanase (CH2CSN), which is characterized by a deletion of six amino acids in the N-region relative to the signal peptide (Csn1-SP) from B. subtilis CH1 chitosanase (CH1CSN). The CH1CSN and CH2CSN genes were cloned into the pET-11a vector and protein secretion was evaluated in E. coli BL21(DE3) host cells. Expression was induced with 0.1 mM and 1 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) at 30 °C for one and three days. CH2CSN showed higher secretion levels compared to CH1CSN under all experimental conditions, especially with 0.1 mM IPTG induction for 3 days, which resulted in a 2.37-fold increase in secretion. Furthermore, it was demonstrated that mCsn2-SP is capable of secreting human Cu,Zn-superoxide dismutase (hSOD) in E. coli BL21(DE3) and successfully translocating it to the periplasmic region. This study represents the inaugural investigation into the utilisation of a naturally modified signal peptide, thereby corroborating the assertion that signal peptide deletion variants can influence protein secretion efficiency. Furthermore, the findings substantiate the proposition that such variants can serve as a viable alternative for the secretion of heterologous proteins in E. coli.",
+    "authors": [
+      "Tae-Yang Eom",
+      "Yehui Gang",
+      "Youngdeuk Lee",
+      "Yoon-Hyeok Kang",
+      "Eunyoung Jo",
+      "Svini Dileepa Marasinghe",
+      "Heung Sik Park",
+      "Gun-Hoo Park",
+      "Chulhong Oh"
+    ],
+    "journal": "Journal of microbiology (Seoul, Korea)",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39585609/"
+  },
+  {
+    "id": "39585521",
+    "title": "Macitentan in Pulmonary Arterial Hypertension Due to Congenital Heart Disease (CHD-PAH): Real-World Evidence from the OPUS/OrPHeUS Studies.",
+    "abstract": "Data on real-world clinical practice and outcomes of patients with pulmonary arterial hypertension (PAH) associated with congenital heart disease (CHD) are scarce. The OPUS/OrPHeUS studies enrolled patients with PAH newly initiating macitentan, including those with PAH associated with CHD (CHD-PAH).",
+    "authors": [
+      "Kelly M Chin",
+      "Richard Channick",
+      "Nick H Kim",
+      "Rose Ong",
+      "Stefano Turricchia",
+      "Nicolas Martin",
+      "Lada Mitchell",
+      "Vallerie V McLaughlin"
+    ],
+    "journal": "Cardiology and therapy",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39585521/"
+  }
+]

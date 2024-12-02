@@ -1,0 +1,73 @@
+[
+  {
+    "id": "39463971",
+    "title": "Statistically principled feature selection for single cell transcriptomics.",
+    "abstract": "The high dimensionality of data in single cell transcriptomics (scRNAseq) requires investigators to choose subsets of genes (feature selection) for downstream analysis (e.g., unsupervised cell clustering). The evaluation of different approaches to feature selection is hampered by the fact that, as we show here, the performance of feature selection methods varies greatly with the task being performed. For routine cell type identification, even randomly chosen features can perform well, but for cell type differences that are subtle, both number of features and selection strategy can matter strongly. Here we present a simple feature selection method grounded in an analytical model that, without resorting to arbitrary thresholds or user-defined parameters, allows for interpretable delineation of both how many and which features to choose, facilitating identification of biologically meaningful rare cell types. We compare this method to default methods in scanpy and Seurat, as well as SCTransform, showing how greater accuracy can often be achieved with surprisingly few, well-chosen features.",
+    "authors": [
+      "Emmanuel Dollinger",
+      "Kai Silkwood",
+      "Scott Atwood",
+      "Qing Nie",
+      "Arthur D Lander"
+    ],
+    "journal": "bioRxiv : the preprint server for biology",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39463971/"
+  },
+  {
+    "id": "39119581",
+    "title": "Revealing the characteristics of SETD2-mutated clear cell renal cell carcinoma through tumor heterogeneity analysis.",
+    "abstract": "Renal cell carcinoma (RCC) is the most prevalent type of malignant kidney tumor in adults, with clear cell renal cell carcinoma (ccRCC) comprising about 75% of all cases. The SETD2 gene, which is involved in the modification of histone proteins, is often found to have alterations in ccRCC. Yet, our understanding of how these SETD2 mutations affect ccRCC characteristics and behavior within the tumor microenvironment is still not fully understood.",
+    "authors": [
+      "Shansen Peng",
+      "Zhouzhou Xie",
+      "Huiming Jiang",
+      "Guihao Zhang",
+      "Nanhui Chen"
+    ],
+    "journal": "Frontiers in genetics",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39119581/"
+  },
+  {
+    "id": "38844552",
+    "title": "Scanorama: integrating large and diverse single-cell transcriptomic datasets.",
+    "abstract": "Merging diverse single-cell RNA sequencing (scRNA-seq) data from numerous experiments, laboratories and technologies can uncover important biological insights. Nonetheless, integrating scRNA-seq data encounters special challenges when the datasets are composed of diverse cell type compositions. Scanorama offers a robust solution for improving the quality and interpretation of heterogeneous scRNA-seq data by effectively merging information from diverse sources. Scanorama is designed to address the technical variation introduced by differences in sample preparation, sequencing depth and experimental batches that can confound the analysis of multiple scRNA-seq datasets. Here we provide a detailed protocol for using Scanorama within a Scanpy-based single-cell analysis workflow coupled with Google Colaboratory, a cloud-based free Jupyter notebook environment service. The protocol involves Scanorama integration, a process that typically spans 0.5-3 h. Scanorama integration requires a basic understanding of cellular biology, transcriptomic technologies and bioinformatics. Our protocol and new Scanorama-Colaboratory resource should make scRNA-seq integration more widely accessible to researchers.",
+    "authors": [
+      "Brian L Hie",
+      "Soochi Kim",
+      "Thomas A Rando",
+      "Bryan Bryson",
+      "Bonnie Berger"
+    ],
+    "journal": "Nature protocols",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38844552/"
+  },
+  {
+    "id": "38745992",
+    "title": "MUFFIN: a suite of tools for the analysis of functional sequencing data.",
+    "abstract": "The large diversity of functional genomic assays allows for the characterization of non-coding and coding events at the tissue level or at a single-cell resolution. However, this diversity also leads to protocol differences, widely varying sequencing depths, substantial disparities in sample sizes, and number of features. In this work, we have built a Python package, MUFFIN, which offers a wide variety of tools suitable for a broad range of genomic assays and brings many tools that were missing from the Python ecosystem. First, MUFFIN has specialized tools for the exploration of the non-coding regions of genomes, such as a function to identify consensus peaks in peak-called assays, as well as linking genomic regions to genes and performing Gene Set Enrichment Analyses. MUFFIN also possesses a robust and flexible count table processing pipeline, comprising normalization, count transformation, dimensionality reduction, Differential Expression, and clustering. Our tools were tested on three widely different scRNA-seq, ChIP-seq and ATAC-seq datasets. MUFFIN integrates with the popular Scanpy ecosystem and is available on Conda and at https://github.com/pdelangen/Muffin.",
+    "authors": [
+      "Pierre de Langen",
+      "Benoit Ballester"
+    ],
+    "journal": "NAR genomics and bioinformatics",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38745992/"
+  },
+  {
+    "id": "38690527",
+    "title": "PAGER-scFGA: unveiling cell functions and molecular mechanisms in cell trajectories through single-cell functional genomics analysis.",
+    "abstract": null,
+    "authors": [
+      "Fengyuan Huang",
+      "Robert S Welner",
+      "Jake Y Chen",
+      "Zongliang Yue"
+    ],
+    "journal": "Frontiers in bioinformatics",
+    "year": "2024",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38690527/"
+  }
+]

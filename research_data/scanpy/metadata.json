@@ -1,0 +1,7 @@
+{
+  "topic": "scanpy",
+  "timestamp": "2024-11-25 13:39:44.828407",
+  "model": "llama3.2:3b",
+  "iterations": 3,
+  "num_papers": 5
+}
